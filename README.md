@@ -1,0 +1,59 @@
+# Хроносфера: Проверка массовой щели по данным LIGO/Virgo
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/chronosphere-mass-gap/blob/main/chronosphere_mass_gap.ipynb)
+
+## О проекте
+
+Этот репозиторий содержит код для проверки ключевого предсказания **Теории Хроносферы** — существования критической массы, разделяющей нейтронные звёзды и чёрные дыры:
+
+**M_crit = 2.5 M_sun**
+
+Анализ выполнен на основе данных гравитационно-волновых каталогов **GWTC-1** и **GWTC-2** (50 событий, 102 массы). Результаты показывают пик в распределении масс при 2.58 M_sun с отклонением 0.08 M_sun от предсказания (1.0σ), что не противоречит теории и требует дальнейшей проверки на данных GWTC-3 и GWTC-4.
+
+### Ключевое предсказание
+
+Теория Хроносферы выводит критическую массу из единственной фундаментальной константы:
+
+**β = (π - 3) / (4π) ≈ 0.0112676**
+
+**M_crit = (2π / β) * (ħ c / G m_n) ≈ 2.5 M_sun**
+
+где β — топологический инвариант, возникающий из геометрии икосаэдра.
+
+---
+
+## Результаты
+
+| Параметр | Значение |
+|----------|---------|
+| Всего масс в анализе | 102 |
+| Массы в диапазоне 1-10 M_sun | 14 |
+| События в массовой щели (2-3 M_sun) | 2 |
+| Пик в массовой щели | 2.58 M_sun |
+| Отклонение от 2.5 M_sun | 0.08 M_sun |
+| Статистическая значимость | 1.0σ |
+| GW190814 | 2.59 ± 0.08 M_sun (1.1σ от предсказания) |
+
+### Визуализация
+
+![Mass Gap Distribution](mass_gap_hronosphere.png)
+
+*Распределение масс компактных объектов по данным GWTC-1 и GWTC-2. Красная линия — предсказание теории (2.5 M_sun), зелёная пунктирная — наблюдаемый пик (2.58 M_sun).*
+
+---
+
+## Запуск в Google Colab
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/chronosphere-mass-gap/blob/main/chronosphere_mass_gap.ipynb)
+
+1. Нажмите на значок Colab выше
+2. Выполните все ячейки последовательно
+3. График автоматически сохранится и скачается на ваш компьютер
+
+### Локальный запуск
+
+```bash
+git clone https://github.com/yourusername/chronosphere-mass-gap.git
+cd chronosphere-mass-gap
+pip install numpy matplotlib
+python chronosphere_mass_gap.py
