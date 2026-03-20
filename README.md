@@ -36,7 +36,7 @@
 
 ### Визуализация
 
-![Mass Gap Distribution](mass_gap_hronosphere.png)
+<img width="1500" height="900" alt="mass_gap_hronosphere" src="https://github.com/user-attachments/assets/70f518b5-1e57-417c-b49d-b0ff42cda83e" />
 
 *Распределение масс компактных объектов по данным GWTC-1 и GWTC-2. Красная линия — предсказание теории (2.5 M_sun), зелёная пунктирная — наблюдаемый пик (2.58 M_sun).*
 
@@ -50,10 +50,4 @@
 2. Выполните все ячейки последовательно
 3. График автоматически сохранится и скачается на ваш компьютер
 
-### Локальный запуск
-
-```bash
-git clone https://github.com/yourusername/chronosphere-mass-gap.git
-cd chronosphere-mass-gap
-pip install numpy matplotlib
-python chronosphere_mass_gap.py
+"Всё сущее есть геометрия." — Платон, Тимей
